@@ -63,8 +63,6 @@ const MovieCardGrid: React.FC<{
                   key={item.title + idx}
                   poster_path={item.poster_path}
                   title={item.title}
-                  index={idx}
-                  onSelect={onMovieSelect}
                   isHighlighted={exploring && focusedItemIdx === idx}
                 />
               </ErrorBoundary>
